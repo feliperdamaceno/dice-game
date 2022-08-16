@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <main class="game">
+      <h1 class="game__title" data-game="title">Let's Play!</h1>
+
+      <button class="game__button" data-game="reload-button">
+        <img src="img/reload.svg" alt="">
+      </button>
+
+      <section class="game__display">
+        <div class="player">
+          <h2 class="player__title">Player 01</h2>
+          <img class="player__dice" src="img/dice-6.svg" alt="dice face" data-game="first-dice">
+        </div>
+
+        <div class="player">
+          <h2 class="player__title">Player 02</h2>
+          <img class="player__dice" src="img/dice-6.svg" alt="dice face" data-game="second-dice">
+        </div>
+
+      </section>
+
+      <footer class="footer">
+        <p>© github.com/feliperdamaceno</p>
+      </footer>
+    </main>
+
+  </body>
+
+</html>

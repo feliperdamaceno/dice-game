@@ -1,0 +1,114 @@
+/* =-=-=-=-=-=-=-=-=-= Import =-=-=-=-=-=-=-=-=-= */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Pacifico&display=swap");
+
+/* =-=-=-=-=-=-=-=-=-= General =-=-=-=-=-=-=-=-=-= */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+:root {
+  /* Font Family*/
+  --ff-title: "Pacifico", cursive;
+  --ff-regular: "Nunito", sans-serif;
+
+  /* Font Settings */
+
+  --fs-large: 5.8rem;
+  --fs-regular: 1.8rem;
+  --fs-small: 1.6rem;
+
+  /* Colors */
+  --light: #edf2f4;
+  --shadow: #8d99ae;
+  --dark: #2b2d42;
+  --accent: #d90429;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+
+  font-family: var(--ff-regular);
+  font-size: var(--fs-regular);
+
+  margin: 0;
+  min-height: 100vh;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* =-=-=-=-=-=-=-=-=-= Game =-=-=-=-=-=-=-=-=-= */
+
+.game {
+  margin-inline: 2rem;
+  min-height: 100vh;
+  padding-top: 2rem;
+  display: grid;
+  place-items: center;
+}
+
+.game__title {
+  font-family: var(--ff-title);
+  font-size: var(--fs-large);
+  font-style: italic;
+  margin: 0;
+  filter: drop-shadow(0 0.35rem 0 var(--shadow));
+}
+
+.game__display {
+  height: 100%;
+  max-width: 786px;
+  width: 100%;
+
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.game__button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  width: 5rem;
+  transition: transform ease-in-out 250ms;
+}
+
+.game__button--active {
+  transform: rotate(360deg);
+}
+
+.player__title {
+  font-family: var(--ff-title);
+
+  margin-bottom: 1.5rem;
+  margin: 0;
+}
+
+.player__dice {
+  margin: 0 auto;
+  max-width: 80%;
+  filter: drop-shadow(0 0.35rem 0 var(--shadow));
+}
+
+/* =-=-=-=-=-=-=-=-=-= Footer =-=-=-=-=-=-=-=-=-= */
+
+.footer {
+  font-size: var(--fs-small);
+  padding-block: 2rem;
+}
